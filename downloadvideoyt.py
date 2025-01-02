@@ -84,8 +84,7 @@ def main():
                     break  # Keluar dari loop jika terjadi error pada salah satu URL
 
             if all_success:
-                print("\nSemua proses selesai!")
-                break  # Keluar dari program jika semua proses berhasil
+                print("\nSemua proses selesai! Kembali ke awal...")
             else:
                 print("\nTerjadi kesalahan pada salah satu URL. Ulangi proses dari awal.")
         except ValueError:
@@ -94,4 +93,4 @@ def main():
             print(f"Terjadi kesalahan: {e}")
 
 if __name__ == "__main__":
-    main()
+    main() 
